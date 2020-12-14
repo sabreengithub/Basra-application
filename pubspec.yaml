@@ -24,7 +24,7 @@ dependencies:
   flutter:
     sdk: flutter
   url_launcher: ^5.5.0
-
+  curved_navigation_bar: ^0.3.4
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -76,9 +76,11 @@ flutter:
    - img_p1/حول المبادرة.png
    - img_p1/Logo.png
    - img_p1/فريق العمل.png
+   - img_p1/email.png
    - img_p1/Team_work.jpg
    - img_p1/arrow.png
    - img_p1/مقترحات.png
+   - img_p1/اتصل بنا.png
    - img_p1/Proposal.jpg
    - img_p1/الخريطة.jpg
    - img_p1/map.png

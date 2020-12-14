@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:basra/Pages/BasraHistory.dart';
-import 'package:basra/Pages/Religious_places.dart';
-import 'package:basra/Pages/Entertainment_places.dart';
-import 'package:basra/Pages/Education.dart';
-import 'package:basra/Pages/Restaurants.dart';
-import 'package:basra/Pages/Hotels.dart';
-import 'package:basra/Pages/Hospitals.dart';
-import 'package:basra/Pages/Photo_Gallery.dart';
+import 'package:basra/Pages/basra_history.dart';
+import 'package:basra/Pages/religious_places.dart';
+import 'package:basra/Pages/entertainment_places.dart';
+import 'package:basra/Pages/education.dart';
+import 'package:basra/Pages/restaurants.dart';
+import 'package:basra/Pages/hotels.dart';
+import 'package:basra/Pages/hospitals.dart';
+import 'package:basra/Pages/photo_Gallery.dart';
 import 'package:basra/Pages/home.dart';
-import 'package:basra/Pages/About_Application.dart';
-import 'package:basra/Pages/About_The initiative.dart';
-import 'package:basra/Pages/Team_The work.dart';
-import 'package:basra/Pages/Proposals.dart';
-
+import 'package:basra/Pages/about_application.dart';
+import 'package:basra/Pages/about_the initiative.dart';
+import 'package:basra/Pages/team_the work.dart';
+import 'package:basra/Pages/email.dart';
+import 'package:basra/Pages/proposals.dart';
 
 void main() => runApp(MyApp());
 
@@ -24,19 +24,20 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: new Home(),
       routes:<String,WidgetBuilder> {
-          '/basrahistory': (BuildContext context) => new BasraHistory(),
-          '/Religious_places': (BuildContext context) => new ReligiousPlaces(),
-          '/Entertainment_places': (BuildContext context) => new EntertainmentPlaces(),
-          '/Education': (BuildContext context) => new Education(),
-          '/Restaurants': (BuildContext context) => new Restaurants(),
-          '/Hotels': (BuildContext context) => new Hotels(),
-          '/Hospitals': (BuildContext context) => new Hospitals(),
-          '/Photo_Gallery': (BuildContext context) => new PhotoGallery(),
+          '/basra_history': (BuildContext context) => new BasraHistory(),
+          '/religious_places': (BuildContext context) => new ReligiousPlaces(),
+          '/entertainment_places': (BuildContext context) => new EntertainmentPlaces(),
+          '/education': (BuildContext context) => new Education(),
+          '/restaurants': (BuildContext context) => new Restaurants(),
+          '/hotels': (BuildContext context) => new Hotels(),
+          '/hospitals': (BuildContext context) => new Hospitals(),
+          '/photo_gallery': (BuildContext context) => new PhotoGallery(),
           '/home': (BuildContext context) => new Home(),
-          '/About_The application': (BuildContext context) => new AboutApplication(),
-          '/About_The initiative': (BuildContext context) => new AboutInitiative(),
-          '/Team_The work': (BuildContext context) => new TeamWork(),
-          '/Proposals': (BuildContext context) => new Proposals(),
+          '/about_the application': (BuildContext context) => new AboutApplication(),
+          '/about_the initiative': (BuildContext context) => new AboutInitiative(),
+          '/team_the work': (BuildContext context) => new TeamWork(),
+        '/email': (BuildContext context) => new Email(),
+        '/proposals': (BuildContext context) => new Proposals(),
         },
 
     );

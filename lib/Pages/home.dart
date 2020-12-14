@@ -37,7 +37,7 @@ class _HomeState extends State<Home> {
                       borderRadius: BorderRadius.circular((20.0))),
                   child: FlatButton(
                     onPressed: () {
-                      Navigator.of(context).pushNamed('/Religious_places');
+                      Navigator.of(context).pushNamed('/religious_places');
                     },
                     padding: EdgeInsets.all(4.0),
                     child: Image.asset(
@@ -66,7 +66,7 @@ class _HomeState extends State<Home> {
                       borderRadius: BorderRadius.circular((20.0))),
                   child: FlatButton(
                     onPressed: () {
-                      Navigator.of(context).pushNamed('/basrahistory');
+                      Navigator.of(context).pushNamed('/basra_history');
                     },
                     padding: EdgeInsets.all(4.0),
                     child: Image.asset(
@@ -95,7 +95,7 @@ class _HomeState extends State<Home> {
                       borderRadius: BorderRadius.circular((20.0))),
                   child: FlatButton(
                     onPressed: () {
-                      Navigator.of(context).pushNamed('/Education');
+                      Navigator.of(context).pushNamed('/education');
                     },
                     padding: EdgeInsets.all(4.0),
                     child: Image.asset(
@@ -125,7 +125,7 @@ class _HomeState extends State<Home> {
                       borderRadius: BorderRadius.circular((20.0))),
                   child: FlatButton(
                     onPressed: () {
-                      Navigator.of(context).pushNamed('/Entertainment_places');
+                      Navigator.of(context).pushNamed('/entertainment_places');
                     },
                     padding: EdgeInsets.all(4.0),
                     child: Image.asset(
@@ -154,7 +154,7 @@ class _HomeState extends State<Home> {
                       borderRadius: BorderRadius.circular((20.0))),
                   child: FlatButton(
                     onPressed: () {
-                      Navigator.of(context).pushNamed('/Restaurants');
+                      Navigator.of(context).pushNamed('/restaurants');
                     },
                     padding: EdgeInsets.all(4.0),
                     child: Image.asset(
@@ -183,7 +183,7 @@ class _HomeState extends State<Home> {
                       borderRadius: BorderRadius.circular((20.0))),
                   child: FlatButton(
                     onPressed: () {
-                      Navigator.of(context).pushNamed('/Hotels');
+                      Navigator.of(context).pushNamed('/hotels');
                     },
                     padding: EdgeInsets.all(4.0),
                     child: Image.asset(
@@ -212,7 +212,7 @@ class _HomeState extends State<Home> {
                       borderRadius: BorderRadius.circular((20.0))),
                   child: FlatButton(
                     onPressed: () {
-                      Navigator.of(context).pushNamed('/Hospitals');
+                      Navigator.of(context).pushNamed('/hospitals');
                     },
                     padding: EdgeInsets.all(4.0),
                     child: Image.asset(
@@ -243,7 +243,7 @@ class _HomeState extends State<Home> {
                       borderRadius: BorderRadius.circular((20.0))),
                   child: FlatButton(
                     onPressed: () {
-                      Navigator.of(context).pushNamed('/Photo_Gallery');
+                      Navigator.of(context).pushNamed('/photo_gallery');
                     },
                     padding: EdgeInsets.all(4.0),
                     child: Image.asset(
@@ -361,7 +361,7 @@ class MyDrawer extends StatelessWidget {
                   textDirection: TextDirection.rtl,
                 ),
                 onTap: () {
-                  Navigator.of(context).pushNamed('/About_The application');
+                  Navigator.of(context).pushNamed('/about_the application');
                 },
               ),
               Divider(
@@ -376,7 +376,7 @@ class MyDrawer extends StatelessWidget {
                   textDirection: TextDirection.rtl,
                 ),
                 onTap: () {
-                  Navigator.of(context).pushNamed('/About_The initiative');
+                  Navigator.of(context).pushNamed('/about_the initiative');
                 },
               ),
               Divider(
@@ -384,16 +384,36 @@ class MyDrawer extends StatelessWidget {
               ),
               ListTile(
                 trailing: Image.asset('img_p1/فريق العمل.png',
-                    color: Colors.black, width: 36, height: 49),
+                    color: Colors.black, width: 38, height: 38),
                 title: Text(
                   "فريق العمل",
                   style: TextStyle(fontSize: 20, color: Colors.black),
                   textDirection: TextDirection.rtl,
                 ),
                 onTap: () {
-                  Navigator.of(context).pushNamed('/Team_The work');
+                  Navigator.of(context).pushNamed('/team_the work');
                 },
               ),
+              Divider(
+                color: Colors.black,
+              ),
+              ListTile(
+                trailing:
+//                Icon(Icons.send,
+//                    color: Colors.black,size: 35,),
+                Image.asset('img_p1/اتصل بنا.png',
+                    color: Colors.black, width: 38, height: 35),
+
+                title: Text(
+                  "اتصل بنا",
+                  style: TextStyle(fontSize: 20, color: Colors.black),
+                  textDirection: TextDirection.rtl,
+                ),
+                onTap: () {
+                  Navigator.of(context).pushNamed('/email');
+                },
+              ),
+//              lllllllllllllllllllllllllllllllllllllllllllllllll
               Divider(
                 color: Colors.black,
               ),
@@ -406,7 +426,7 @@ class MyDrawer extends StatelessWidget {
                   textDirection: TextDirection.rtl,
                 ),
                 onTap: () {
-                  Navigator.of(context).pushNamed('/Proposals');
+                  Navigator.of(context).pushNamed('/proposals');
                 },
               ),
             ]),

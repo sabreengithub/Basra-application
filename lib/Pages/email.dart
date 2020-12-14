@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-class Proposals extends StatefulWidget {
+class Email extends StatefulWidget {
   @override
-  _ProposalsState createState() => _ProposalsState();
+  _EmailState createState() => _EmailState();
 }
 
-class _ProposalsState extends State<Proposals> {
+class _EmailState extends State<Email> {
   void _launchEmail(String emailId) async {
     var url = "mailto:$emailId?subject=";
     if (await canLaunch(url)) {
@@ -24,7 +24,7 @@ class _ProposalsState extends State<Proposals> {
         child: AppBar(
           backgroundColor: Color.fromRGBO(53, 50, 94, 58.0),
           title: new Text(
-            "مقترحات",
+            "اتصل بنا",
             style: TextStyle(
                 fontSize: 20, color: Colors.white, fontWeight: FontWeight.bold),
           ),
@@ -37,41 +37,29 @@ class _ProposalsState extends State<Proposals> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               new Container(
+                margin: EdgeInsets.all(2.0),
                 child: Image.asset(
-                  'img_p1/Proposal.jpg',
+                  'img_p1/email.png',
                   width: MediaQuery.of(context).size.width,
+                  height: 250,
                 ),
               ),
               new Container(
                 width: MediaQuery.of(context).size.width,
                 height: 50,
                 margin: EdgeInsets.only(
-                  top: 100.0,
+                  top: 5.0,
                   right: 5.0,
                   left: 5.0,
                 ),
                 padding: EdgeInsets.all(10.0),
                 child: Text(
-                  "اذا كان لديك مقترح مهم لتطوير قسم في البرنامج  ",
+                  "للتواصل معنا يمكنكم مراسلتنا عبر البريد الالكتروني ",
                   textDirection: TextDirection.rtl,
                   style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
                     color: Colors.black,
-                  ),
-                ),
-              ),
-              new Container(
-                margin:EdgeInsets.all(5.0) ,
-                child: Center(
-                  child: Text(
-                    " ارسله عبر E-mail ",
-                    textDirection: TextDirection.rtl,
-                    style: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                      color: Colors.redAccent,
-                    ),
                   ),
                 ),
               ),
@@ -115,34 +103,33 @@ class _ProposalsState extends State<Proposals> {
                         color: Colors.black,
                       ),
                     ),
-                  )),
+                  ),),
+              SizedBox(height: 5.0,),
               Center(
-                child: FlatButton(
-                  color: Colors.redAccent,
-                  textColor: Colors.white,
-                  splashColor: Colors.cyan,
+                child: RaisedButton(
+//                  new RaisedButton(
+                    color: Colors.redAccent,
+                    textColor: Colors.white,
+                    splashColor: Colors.lightBlueAccent,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      mainAxisSize: MainAxisSize.min,
+                      children: [
+                        Text(
+                          "اضغط هنا",
+                          style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
+                    ),
                   onPressed: () {
                     _launchEmail('info@codeforiraq.org');
                   },
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      Icon(Icons.send),
-                      SizedBox(
-                        width: 10.0,
-                      ),
-                      Text(
-                        "Send",
-                        style: TextStyle(
-                          fontSize: 18,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      ),
-                    ],
-                  ),
+             ),
                 ),
-              ),
+              SizedBox(height: 5.0,),
               new Center(
                 child: Text("لارسال الرسالة اختر تطبيق Gmail",
                     textDirection: TextDirection.rtl,
