@@ -9,8 +9,8 @@ import 'package:basra/Pages/hospitals.dart';
 import 'package:basra/Pages/photo_Gallery.dart';
 import 'package:basra/Pages/home.dart';
 import 'package:basra/Pages/about_application.dart';
-import 'package:basra/Pages/about_the initiative.dart';
-import 'package:basra/Pages/team_the work.dart';
+import 'package:basra/Pages/about_theinitiative.dart';
+import 'package:basra/Pages/team_thework.dart';
 import 'package:basra/Pages/email.dart';
 import 'package:basra/Pages/proposals.dart';
 
