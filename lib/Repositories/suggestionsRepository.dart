@@ -8,18 +8,17 @@ abstract class SuggestionsRepository {
 }
 
 class SuggestionsRepositoryImp implements SuggestionsRepository {
-
-  /// added new material
+  /// added new Suggestions
   @override
   Future<String> addSuggestions({@required String description}) async {
-    var response =  await http.post(API.Url+'suggestions',body: {
+    var response = await http.post(API.Url + 'suggestions', body: {
       "description": description
-    },headers: {
+    }, headers: {
       'Accept': 'application/json',
     });
-    if(response.statusCode == 201){
+    if (response.statusCode == 201) {
       return json.decode(response.body)['message'];
     }
-    throw  json.decode(response.body)['errors'];
+    throw json.decode(response.body)['errors'];
   }
 }
