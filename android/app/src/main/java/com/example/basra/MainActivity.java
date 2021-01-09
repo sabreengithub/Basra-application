@@ -1,4 +1,4 @@
-package com.example.basra;
+package org.codeforiraq.tourismofbasra;
 
 import io.flutter.embedding.android.FlutterActivity;
 

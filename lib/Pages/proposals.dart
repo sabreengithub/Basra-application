@@ -143,13 +143,20 @@ class _ProposalsState extends State<Proposals> {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 mainAxisSize: MainAxisSize.min,
                                 children: [
-                                  Text(
+                                  state is SuggestionsLoading ?  SizedBox(
+                                    child: CircularProgressIndicator(
+                                      strokeWidth: 1.0,
+                                      valueColor: new AlwaysStoppedAnimation<Color>(Colors.white),
+                                    ),
+                                    height: 25,
+                                    width: 25,
+                                  ) : Text(
                                     "ارسال",
                                     style: TextStyle(
                                       fontSize: 18,
                                       fontWeight: FontWeight.bold,
                                     ),
-                                  ),
+                                  )
                                 ],
                               ),
                             )
